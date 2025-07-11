@@ -86,7 +86,10 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 936e46142d5fb97a0c16ad48e6f19bcb1374b744
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -11018,7 +11021,11 @@ footer.footer {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
+<<<<<<< HEAD
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/IMG_5947_00.jpg");
+=======
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/main.jpg");
+>>>>>>> 936e46142d5fb97a0c16ad48e6f19bcb1374b744
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11178,4 +11185,8 @@ a.no-style {
   background-color: #23252A;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 936e46142d5fb97a0c16ad48e6f19bcb1374b744
