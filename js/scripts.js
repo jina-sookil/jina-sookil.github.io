@@ -13,7 +13,19 @@ function copyLink(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("주소를 복사했습니다.")
+	alert("주소가 복사되었습니다.")
+}
+
+//웨딩홀 주소 복사
+function copyLocation(){
+    var location = '경기 수원시 권선구 세화로 116 메리빌리아더프레스티지 웨딩홀';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = copyLocation;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("주소가 복사되었습니다.")
 }
 
 // 신부 계좌번호 복사
@@ -84,65 +96,26 @@ function kakaoShare() {
     })
 }
 
-const calendarContainer = document.querySelector('.calendar-container');
-const monthYear = calendarContainer.querySelector('.month-year');
-const calendarGrid = calendarContainer.querySelector('.calendar-grid');
-const prevMonthBtn = calendarContainer.querySelector('.prev-month');
-const nextMonthBtn = calendarContainer.querySelector('.next-month');
+const DDay = document.querySelector("#DDay");
 
-let currentDate = new Date();
-
-function renderCalendar(date) {
-  const year = date.getFullYear();
-  const month = date.getMonth();
-
-  // 월/년 표시 업데이트
-  monthYear.textContent = `${year}년 ${month + 1}월`;
-
-  // 기존 날짜 요소 제거
-  while (calendarGrid.children.length > 7) {
-    calendarGrid.removeChild(calendarGrid.lastChild);
-  }
-
-  // 해당 월의 첫 날과 마지막 날 계산
-  const firstDay = new Date(year, month, 1);
-  const lastDay = new Date(year, month + 1, 0);
-  const startDay = firstDay.getDay(); // 0:일요일, 1:월요일, ...
-  const numDays = lastDay.getDate();
-
-  // 첫 날 이전의 빈 날짜 채우기
-  for (let i = 0; i < startDay; i++) {
-    const emptyCell = document.createElement('div');
-    calendarGrid.appendChild(emptyCell);
-  }
-
-  // 날짜 채우기
-  for (let i = 1; i <= numDays; i++) {
-    const dayCell = document.createElement('div');
-    dayCell.classList.add('day');
-    dayCell.textContent = i;
-
-    // 예식 날짜 강조 (예시)
-    if (year === 2025 && month === 10 && i === 19) {
-        dayCell.classList.add('wedding-day');
+function counter_day(){
+  const christmas = new Date("2025-10-19");  //디데이 설정
+  const today = new Date();  //밀리세컨드 단위의 시간 표시 1초=1000
+  
+  day_gap = christmas - today;  //크리스마스까지 남은 밀리세컨드 초 값
+  
+  const day = Math.floor(day_gap / (1000*60*60*24));
+    //디데이까지 남은 밀리세컨드초 / 하루의 밀리세컨드초 = 남은 일수
+    if(day == 0) {
+        DDay.innerText = `오늘입니다.`;
+    } else if(day < 0) {
+        DDay.innerText = `${-day-1} 일 지났습니다.`;
+    } else if(day >0) {
+        DDay.innerText = `${day} 일 남았습니다.`;
     }
-    calendarGrid.appendChild(dayCell);
-  }
 }
-
-// 이전/다음 달 버튼 클릭 이벤트
-prevMonthBtn.addEventListener('click', () => {
-  currentDate.setMonth(currentDate.getMonth() - 1);
-  renderCalendar(currentDate);
-});
-
-nextMonthBtn.addEventListener('click', () => {
-  currentDate.setMonth(currentDate.getMonth() + 1);
-  renderCalendar(currentDate);
-});
-
-// 초기 캘린더 렌더링
-renderCalendar(currentDate);
+counter_day();
+setInterval(counter_day, 1000);  //초마다 디데이 기능 실행
 
 function toggleFoldable() {
     var content = document.querySelector('.foldable-content');
