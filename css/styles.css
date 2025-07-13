@@ -11193,7 +11193,7 @@ a.no-style {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: rgba(185, 197, 153);
+  color: rgba(163, 178, 123);
   font-size: 12px;
   margin: 8px 0px;
 }
@@ -11201,9 +11201,66 @@ a.no-style {
 .hr-sect::after {
   content: "";
   flex-grow: 1;
-  background: rgba(185, 197, 153, 0.35);
+  background: rgba(163, 178, 123, 0.7);
   height: 1px;
   font-size: 0px;
   line-height: 0px;
   margin: 0px 16px;
+}
+
+.calendar {
+  background-color: bg-light;
+}
+
+.calendar-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.calendar5-main {
+  font-family: Gowun Dodum;
+  line-height: 1.5em;
+  font-size: 18dp;
+}
+
+.calendar-sub {
+  font-family: Gowun Dodum;
+  line-height: 1.5em;
+  font-size: 16dp;
+}
+
+.calendar-table {
+  font-family: Gowun Dodum;
+  line-height: 1.5em;
+  font-size: 16dp;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-table tr td{
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.calendar-table tr .sun{
+  color: red;
+}
+
+.calendar-table tr .sat{
+  color: blue;
+}
+
+.calendar-table tr .check{
+  color: white;
+  background-color: rgba(164, 180, 124);
+  border-radius: 50%;
+}
+
+.calendar-table tr:first-child td{
+  padding-top: 2em;
+}
+
+.calendar-table tr:last-child td{
+  padding-bottom: 2em;
 }
