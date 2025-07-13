@@ -21,7 +21,7 @@ function copyLocation(){
     var location = '경기 수원시 권선구 세화로 116 메리빌리아더프레스티지 웨딩홀';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
-    textarea.value = copyLocation;
+    textarea.value = location;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);

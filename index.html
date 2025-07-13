@@ -26,7 +26,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR&display=swap" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
+        <!-- 네이버 지도 띄우기 위한 client id -->
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=m2daedlv6a"></script>
 
     </head>
     <body id="page-top">
@@ -79,30 +80,30 @@
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;">성영만 · 추원숙&nbsp;의 &nbsp;&ensp;&nbsp;딸 <b>진아</b></p>
                         <br><br>
                         <div class="call-button">
-                            <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">신랑&nbsp;채수길&nbsp;&nbsp;&nbsp;
+                            <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">신랑&nbsp;&nbsp;채수길&nbsp;&nbsp;&nbsp;
                             <a href="tel:01073385566"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                             <a href="sms:01073385566"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
-                            <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">신부&nbsp;성진아&nbsp;&nbsp;&nbsp;
+                            <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">신부&nbsp;&nbsp;성진아&nbsp;&nbsp;&nbsp;
                             <a href="tel:01098925544"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                             <a href="sms:01098925544"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
                     
                             <div class="hr-sect">
                                 <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
                                 신랑측 혼주</p></div>
-                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">아버지&nbsp;채태석&nbsp;&nbsp;&nbsp;
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">아버지&nbsp;&nbsp;채태석&nbsp;&nbsp;&nbsp;
                                 <a href="tel:01027762547"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                                 <a href="sms:01027762547"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
-                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">어머니&nbsp;김은자&nbsp;&nbsp;&nbsp;
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">어머니&nbsp;&nbsp;김은자&nbsp;&nbsp;&nbsp;
                                 <a href="tel:01027772303"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                                 <a href="sms:01027772303"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
                             </div>
                             
                             <div class="hr-sect"><p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
                                 신부측 혼주</p></div>
-                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">아버지&nbsp;성영만&nbsp;&nbsp;&nbsp;
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">아버지&nbsp;&nbsp;성영만&nbsp;&nbsp;&nbsp;
                                 <a href="tel:01084466616"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                                 <a href="sms:01084466616"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
-                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">어머니&nbsp;추원숙&nbsp;&nbsp;&nbsp;
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">어머니&nbsp;&nbsp;추원숙&nbsp;&nbsp;&nbsp;
                                 <a href="tel:01065417008"><i class="fa-solid fa-phone fa-sm"></i></a>&nbsp;&nbsp;&nbsp;
                                 <a href="sms:01065417008"><i class="fa-solid fa-envelope fa-sm"></i></a></p>
                             </div>
@@ -297,10 +298,33 @@
                 수원역 메리빌리아 더 프레스티지 컨벤션홀</p>
                 <p class="mb-4" style="font-family: 'Gowun Dodum', serif; font-size: 18px;">
                 <font color="#a3a3a3">
-                    경기 수원시 권선구 세화로 116 메리빌리아더프레스티지 웨딩홀&nbsp;
+                    경기 수원시 권선구 세화로 116<br>메리빌리아더프레스티지 웨딩홀&nbsp;
                     <a title="주소 복사하기" onclick="copyLocation(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a>
                 </font></p>
                 </div>
+                <!-- 지도 사이즈 -->
+                <div id="mainMap" style="width:100%; height:800px;"></div>
+                <script>
+                    var map = new naver.maps.Map('mainMap', {
+                        center: new naver.maps.LatLng(37.5112, 127.0981), // 잠실 롯데월드를 중심으로 하는 지도
+                        zoom: 15
+                    });
+
+                    var marker = new naver.maps.Marker({
+                        position: new naver.maps.LatLng(37.5112, 127.0981),
+                        map: map
+                    });
+
+    
+                </script>
+                
+                
+                
+                
+                
+                
+                
+                
                 <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;"><br>홀에서 예식을 보신 뒤 1층으로 이동하시거나<br>1층에서 스크린으로 예식을 보며 식사 하실 수 있습니다.😊</p>
 
                 <div id="foldableSection">
@@ -381,7 +405,7 @@
                         <a class="social-link rounded-circle text-white mr-5" title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0" style="font-family: 'Gowun Dodum', sans-serif;">Made By Sung Jina.</p>
+                <p class="text-muted small mb-0" style="font-family: 'Gowun Dodum', sans-serif;">Made By Jina Sung.</p>
             </div>
         </footer>
        
