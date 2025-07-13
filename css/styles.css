@@ -43,7 +43,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   /* here 29, 128, 159; */
-  --bs-primary-rgb: 252, 158, 170;
+  --bs-primary-rgb: 236, 241, 225;
   --bs-secondary-rgb: 236, 184, 7;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -11181,3 +11181,29 @@ a.no-style {
 
 }
 
+.call-button {
+  cursor: pointer;
+  text-decoration: none; /* 밑줄 제거 */
+  border: none; /* 버튼 스타일의 테두리 제거 */
+  background: none; /* 배경 스타일 제거 */
+  padding: 0; /* 내부 여백 제거 */
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(185, 197, 153);
+  font-size: 12px;
+  margin: 8px 0px;
+}
+
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(185, 197, 153, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
