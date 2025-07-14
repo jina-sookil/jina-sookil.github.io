@@ -28,18 +28,6 @@ function copyLocation(){
     alert("주소가 복사되었습니다.")
 }
 
-// 신부 계좌번호 복사
-function brideAccountNumber(){
-	var bride_account = '3333-01-7158366 카카오뱅크';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = bride_account;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("신부의 계좌번호가 복사되었습니다.\n3333-01-7158366 카카오뱅크")
-}
-
 // 신랑 계좌번호 복사
 function groomAccountNumber(){
 	var groom_account = '00000000 카카오뱅크';
@@ -52,7 +40,7 @@ function groomAccountNumber(){
 	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
-// 아버님 계좌번호 복사 
+//신랑 아버님 계좌번호 복사
 function groomsFatherAccountNumber(){
     var grooms_father_account = '00000000 국민은행';
 	var textarea = document.createElement("textarea");
@@ -61,22 +49,66 @@ function groomsFatherAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n00000000 국민은행")
+	alert("계좌번호가 복사되었습니다.\n000000001 국민은행")
+}
+//신랑 어머님 계좌번호 복사
+function groomsMotherAccountNumber(){
+    var grooms_mother_account = '00000000 국민은행';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = grooms_mother_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n000000002 국민은행")
+}
+// 신부 계좌번호 복사
+function brideAccountNumber(){
+    var bride_account = '3333-01-7158366 카카오뱅크';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = bride_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("신부의 계좌번호가 복사되었습니다.\n3333-01-7158366 카카오뱅크")
+}
+// 신부 아버님 계좌번호 복사
+function bridesFartherAccountNumber(){
+    var brides_farther_account = '3333-01-7158366 카카오뱅크';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = brides_farther_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n3333-01-71583663 카카오뱅크")
+}
+// 신부 어머님 계좌번호 복사
+function bridesMotherAccountNumber(){
+    var brides_mother_account = '3333-01-7158366 카카오뱅크';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = brides_mother_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n3333-01-71583664 카카오뱅크")
 }
 
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('YOUR APP KEY');
+    Kakao.init('50336706855be115a576af4c3035e42e');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '진아🤍수길 결혼합니다.',
-        description: '2025.10.19\n오후 3시 수원 메리빌리아 더 프레스티지',
-        imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
+        title: '수길🤍진아 결혼식에 초대합니다.',
+        description: '2025.10.19 오후 3시\n수원 메리빌리아 더 프레스티지',
+        imageUrl: 'https://github.com/jina-sookil/jina-sookil.github.io/blob/main/assets/img/main.jpg?raw=true',
         link: {
             mobileWebUrl: 'https://jina-sookil.github.io/#!',
             webUrl: 'https://jina-sookil.github.io/#!',
