@@ -11198,6 +11198,7 @@ a.no-style {
   margin: 8px 0px;
 }
 
+
 .hr-sect::after {
   content: "";
   flex-grow: 1;
@@ -11263,4 +11264,9 @@ a.no-style {
 
 .calendar-table tr:last-child td{
   padding-bottom: 2em;
+}
+
+.text-information {
+  text-align: left !important;
+  margin-left: 32dx
 }

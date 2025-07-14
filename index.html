@@ -243,91 +243,115 @@
                 </font></p>
                 </div>
                 <!-- 지도 사이즈 -->
-                <div id="map" style="width:100%; height:800px;"></div>
+                <div id="map" style="width:100%; height:300px;"></div>
 
                 <script>
-
                     var map = new naver.maps.Map('map', {
-                        center: new naver.maps.LatLng(37.5112, 127.0981), // 잠실 롯데월드를 중심으로 하는 지도
-                        zoom: 15
+                        center: new naver.maps.LatLng(37.2627302, 126.9966484),
+                        zoom: 15,
+                        zoomControl: true,
+                        zoomControlOptions: {
+                            position: naver.maps.Position.TOP_RIGHT
+                            }
                     });
 
                     var marker = new naver.maps.Marker({
-                        position: new naver.maps.LatLng(37.5112, 127.0981),
+                        position: new naver.maps.LatLng(37.2627302, 126.9966484),
                         map: map
                     });
-
                 </script>
-                
-                
-                
-                
-                
-                
-                
-                <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;"><br>홀에서 예식을 보신 뒤 1층으로 이동하시거나<br>1층에서 스크린으로 예식을 보며 식사 하실 수 있습니다.😊</p>
-
-                <div id="foldableSection">
-                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;" class="toggle-button" onclick="toggleFoldable3()">층별 안내<span id="toggleIcon3">▼</span></p>
-                    <div class="foldable-content3" style="display: none;">
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 10px;">아이콘을 누르시면 페이지로 이동합니다.</p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 12px;">1층&nbsp;&nbsp;-&nbsp;&nbsp;연회장<a class="no-style" href="https://chungdamvilladegd.com/CelesteCusine">🍽</a></p>
-                        <p style="font-family: 'Gowun Dodumg', serif; font-size: 12px;">2층&nbsp;&nbsp;-&nbsp;&nbsp;메인홀<a class="no-style" href="https://chungdamvilladegd.com/EspaceEmpyree">💒</a></p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 12px;">3층&nbsp;&nbsp;-&nbsp;&nbsp;신부대기실<a class="no-style" href="https://chungdamvilladegd.com/PavillonMariee">👰🏻‍♀️</a></p>
+                <div class="col-md-12">
+                    <div class="my-3 text-center">
+                        <a href="https://naver.me/5apDP7nI">
+                            <img alt="naver-map" class="map-icon" id="naver-map"
+                                 src="assets/img/map/naver-map.png"/>
+                        </a>
+                        <a href="https://kko.kakao.com/SuYDex3fLn">
+                            <img alt="kakao-map" class="map-icon" id="kakao-map"
+                                 src="assets/img/map/kakao-map.png"/>
+                        </a>
+                        <a href="https://tmap.life/1e3d958e">
+                            <img alt="t-map" class="map-icon" id="t-map"
+                                 src="assets/img/map/t-map.png"/>
+                        </a>
+                        <a href="https://maps.app.goo.gl/w79RFP4HZDGovUYP6">
+                            <img alt="google-map" class="map-icon" id="google-map"
+                                 src="assets/img/map/google-map.png"/>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="text-information">
+                    <div class="hr-sect"></div>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;">
+                    <a title="parking"><i class="fa-solid fa-square-parking"></i>&nbsp;주차</a></p>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
+                    당일 <b>2시간</b> 무료 주차 가능<br>
+                    (주차요원 상시대기)
+                    <br>
+                    -건물 내, 주차장/주차타워 이용가능<br>
+                    &nbsp;(주소 : 경기도 수원시 권선구 세화로 116(서둔동 389)<br>
+                    &nbsp;&nbsp;&nbsp;메리빌리아 더 프레스티지 웨딩홀)<br>
+                    <br>
+                    -만차 시, 바로 옆 수원역 한양 아이클래스 퍼스트 주차장 이용 가능<br>
+                    &nbsp;(주소 : 경기도 수원시 권선구 세화로 134(서둔동 421) B3/B4/B5<br>
+                    &nbsp;&nbsp;&nbsp;한양 아이클래스 퍼스트)<br>
+                    </p>
+                    <div class="hr-sect"></div>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;">
+                    <a title="train"><i class="fa-solid fa-train"></i>&nbsp;지하철</a></p>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
+                    1호선, 수인분당선, KTX 수원역 2/3번 출구<br>
+                    (도보 8분거리 타임빌라스 수원(구 롯데몰) 맞은편)<br>
+                    </p>
+                    <div class="hr-sect"></div>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;">
+                    <a title="bus"><i class="fa-solid fa-bus"></i>&nbsp;버스</a></p>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
+                    수원역 환승센터 하차 / 평동 동남아파트 하차<br>
+                    <br>
+                    <b>-세화로 방면</b><br>
+                    일반 : 22-1, 22-2, 42, 51, 400-1<br>
+                    좌석 : 1004, 1004-1<br>
+                    <br>
+                    <b>-덕영대로 방면</b><br>
+                    일반 : 2, 2-1, 2-2, 9, 9-1, 9-2, 10, 10-2, 10-5<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11-1, 13, 13-4, 15, 15-1, 36, 37, 39, 46-1, 47,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60, 66-4, 66, 82-2, 83-1, 88, 88-1, 92, 92-1,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;660, 700-2, 720-2, 730, 777<br>
+                    좌 석 : 110, 909<br>
+                    직 행 : 1007, 2007, 7770, 8401, 8409<br>
+                    공 항 : 4100<br>
+                    시 외 : 3000, 8426, 8448, 8450, 8471, 8472<br>
+                    시 외 : 8805, 9801, 9802<br>
+                    마 을 : 6-1, 6-3, 27-2, 31<br>
+                    </p>
+                    <div class="hr-sect"></div>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;">
+                    <a title="notice"><i class="fa-solid fa-exclamation"></i>&nbsp;대중교통 이용안내</a></p>
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
+                    -수원역 2번 출구쪽으로 오시면<br>
+                    &nbsp;타임빌라스 수원(구 롯데몰) 연결통로(지하 1층)가 있습니다.<br>
+                    &nbsp;타임빌라스 수원으로 진입 후 1층으로 올라와<br>
+                    &nbsp;게이트 5번으로 나오시면 메리빌리아 건물이 보입니다.<br>
+                    <br>
+                    -2층 대합실에서 3번 출구쪽으로 오시면<br>
+                    &nbsp;타임빌라스 수원(구 롯데몰) 연결통로(2층)가 있습니다.<br>
+                    &nbsp;타임빌라스 수원으로 진입 후 1층으로 내려와<br>
+                    &nbsp;게이트 5번으로 나오시면 메리빌리아 건물이 보입니다.<br>
+                    <br><br>
+                    </p>
                     </div>
                 </div>
-                <a class="btn btn-xl btn-light me-4" style="font-family: 'Gowun Dodum', serif; font-size: 12px;" href="https://chungdamvilladegd.com/Location">오시는 길</a>
-                <a class="btn btn-xl btn-dark" style="font-family: 'Gowun Dodum', serif; font-size: 12px;" href="https://chungdamvilladegd.com/Course">메뉴 보러가기</a>
-
-                <p style="font-family: 'Gowun Dodum', serif; font-size: 18px;"><br>축하화환은 정중히 사양합니다.<br>좋은 마음만 감사히 받겠습니다.💐<br></p>
-
-                <p class="mb-4" style="font-family: 'Song Myung', serif; font-size: 20px;">📢2025.10.19 일요일 오후 3시📢<br>수원 메리빌리아 더 프레스티지</p>
-                <p style="font-family: 'Song Myung', serif; font-size: 16px;"><br>홀에서 예식을 보신 뒤 1층으로 이동하시거나<br>1층에서 스크린으로 예식을 보며 식사 하실 수 있습니다.😊</p>
-
-                <div id="foldableSection">
-                    <p style="font-family: 'Song Myung', serif; font-size: 15px;" class="toggle-button" onclick="toggleFoldable3()">층별 안내<span id="toggleIcon3">▼</span></p>
-                    <div class="foldable-content3" style="display: none;">
-                        <p style="font-family: 'Song Myung', serif; font-size: 10px;">아이콘을 누르시면 페이지로 이동합니다.</p>
-                        <p style="font-family: 'Song Myung', serif; font-size: 12px;">1층&nbsp;&nbsp;-&nbsp;&nbsp;연회장<a class="no-style" href="https://chungdamvilladegd.com/CelesteCusine">🍽</a></p>  
-                        <p style="font-family: 'Song Myung', serif; font-size: 12px;">2층&nbsp;&nbsp;-&nbsp;&nbsp;메인홀<a class="no-style" href="https://chungdamvilladegd.com/EspaceEmpyree">💒</a></p>  
-                        <p style="font-family: 'Song Myung', serif; font-size: 12px;">3층&nbsp;&nbsp;-&nbsp;&nbsp;신부대기실<a class="no-style" href="https://chungdamvilladegd.com/PavillonMariee">👰🏻‍♀️</a></p>  
-                    </div>
-                </div>
-                <a class="btn btn-xl btn-light me-4" style="font-family: 'Song Myung', serif; font-size: 12px;" href="https://chungdamvilladegd.com/Location">오시는 길</a>
-                <a class="btn btn-xl btn-dark" style="font-family: 'Song Myung', serif; font-size: 12px;" href="https://chungdamvilladegd.com/Course">메뉴 보러가기</a>
-
-                <p style="font-family: 'Song Myung', serif; font-size: 18px;"><br>축하화환은 정중히 사양합니다.<br>좋은 마음만 감사히 받겠습니다.💐<br></p>
-
-            </div>
-        </section>
-
-        <!-- Map-->
-        <div class="form-group">
-            <div class="col-md-12">
-                <div class="my-3 text-center">
-                    <a href="https://naver.me/xM28SuGC">
-                        <img alt="naver-map" class="map-icon" id="naver-map"
-                             src="assets/img/map/naver-map.png"/>
-                    </a>
-                    <a href="https://kko.to/NYdZbVMERT">
-                        <img alt="kakao-map" class="map-icon" id="kakao-map"
-                             src="assets/img/map/kakao-map.png"/>
-                    </a>
-                    <a href="https://maps.app.goo.gl/LwnLrfGHoNFKWo1A6">
-                        <img alt="google-map" class="map-icon" id="google-map"
-                             src="assets/img/map/google-map.png"/>
-                    </a>
-                </div>
-                <div class="my-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12657.922222904594!2d127.04513706057449!3d37.52016777181734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5419460f02b%3A0xc83d0b0bd4ba3c31!2z67mM652865Oc7KeA65SUIOyyreuLtA!5e0!3m2!1sko!2skr!4v1700744494639!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        
         <!-- account Zone(bg-primary) -->
         <!-- 구현 필요 -->
-        
-        
+        <section class="content-section bg-primary text-center" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 20px; font-weight: bold;">GALLERY</p>
+                    <br>
+                </div>
+            </div>
+        </section>
         
         
         
