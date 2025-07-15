@@ -92,6 +92,7 @@
   }
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11018,7 +11019,7 @@ footer.footer {
   padding-top: 8rem;
   padding-bottom: 8rem;
 
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/IMG_5947_00.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/main.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11269,4 +11270,46 @@ a.no-style {
 .text-information {
   text-align: left !important;
   margin-left: 32dx
+}
+
+.photo-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+/*
+ Add Gallery
+ */
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery .thumbnail:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
