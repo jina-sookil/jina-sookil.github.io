@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:image" content="assets/img/main.jpg">
         <meta property="og:description" content="2025.10.19 오후 3시 수원 메리빌리아 더 프레스티지"/>
         <meta charset="utf-8" />
@@ -187,37 +187,44 @@
                     <p style="font-family: 'Gowun Dodum', serif; font-size: 20px; font-weight: bold;">GALLERY</p>
                     <br>
                 </div>
-          <div class="container">
-            <div id="image-gallery">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                  <div class="img-wrapper">
-                    <a href="../assets/img/gallery/2.jpg"><img src="../assets/img/gallery/2.jpg" class="img-responsive"></a>
-                    <div class="img-overlay">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                <div class="wrap">
+                        <div><a class="first" href=""></a><img src="../assets/img/gallery/2.jpg" /></div>
+                        <div><a class="second" href=""></a><img src="../assets/img/gallery/3.jpg" /></div>
+                        <div><a class="third" href=""></a><img src="../assets/img/gallery/4.jpg" /></div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                  <div class="img-wrapper">
-                    <a href="../assets/img/gallery/3.jpg"><img src="../assets/img/gallery/3.jpg" class="img-responsive"></a>
-                    <div class="img-overlay">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                  <div class="img-wrapper">
-                    <a href="../assets/img/gallery/4.jpg"><img src="../assets/img/gallery/4.jpg" class="img-responsive"></a>
-                    <div class="img-overlay">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End row -->
-            </div><!-- End image gallery -->
-          </div><!-- End container -->
         </section>
+<!--        <section id="gallery bg-primary">-->
+<!--          <div class="container">-->
+<!--            <div id="image-gallery">-->
+<!--              <div class="row">-->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">-->
+<!--                  <div class="img-wrapper">-->
+<!--                    <a href="../assets/img/gallery/2.jpg"><img src="../assets/img/gallery/2.jpg" class="img-responsive"></a>-->
+<!--                    <div class="img-overlay">-->
+<!--                      <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">-->
+<!--                  <div class="img-wrapper">-->
+<!--                    <a href="../assets/img/gallery/3.jpg"><img src="../assets/img/gallery/3.jpg" class="img-responsive"></a>-->
+<!--                    <div class="img-overlay">-->
+<!--                      <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">-->
+<!--                  <div class="img-wrapper">-->
+<!--                    <a href="../assets/img/gallery/4.jpg"><img src="../assets/img/gallery/4.jpg" class="img-responsive"></a>-->
+<!--                    <div class="img-overlay">-->
+<!--                      <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div><!-- End row -->-->
+<!--            </div><!-- End image gallery -->-->
+<!--          </div><!-- End container -->-->
+<!--        </section>-->
 
 <!--                <div class="container">-->
 <!--                    <div class="row d-flex flex-wrap align-items-center" data-target="#lightbox">-->
@@ -417,14 +424,13 @@
         
         
         <!-- share Zone(bg-light) -->
-        <!-- 구현 필요 -->
         <!-- Footer-->
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-5" title="카카오톡으로 공유하기" href="javascript:kakaoShare()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="social-kakao-link rounded-circle text-white mr-5" title="카카오톡으로 공유하기" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i></a>
                     </li>
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-5" title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i></a>

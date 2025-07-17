@@ -10978,6 +10978,18 @@ footer.footer {
   padding-bottom: 2rem;
 }
 
+.social-kakao-link {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #f9e787;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 .social-link {
   display: block;
   text-decoration: none;
@@ -10985,7 +10997,7 @@ footer.footer {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #23252A;
+  background-color: #b3c091;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -11254,9 +11266,29 @@ a.no-style {
 }
 
 .calendar-table tr .check{
-  color: white;
-  background-color: rgba(164, 180, 124);
-  border-radius: 50%;
+    @media (max-width: 767px){
+        color: white;
+        background-color: rgba(164, 180, 124);
+        border-radius: 50%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        color: white;
+        background-color: rgba(164, 180, 124);
+        border-radius: 0%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        color: white;
+        background-color: rgba(164, 180, 124);
+        border-radius: 0%;
+    }
+
+    @media (min-width: 1200px) {
+        color: white;
+        background-color: rgba(164, 180, 124);
+        border-radius: 0%;
+    }
 }
 
 .calendar-table tr:first-child td{
@@ -11272,11 +11304,80 @@ a.no-style {
   margin-left: 32dx
 }
 
-.photo-wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
+
+/*
+ 공유하기 버튼
+ */
+
+.share-talk-btn {
+   font-size: 0;
+   line-height: 0;
+   white-space: nowrap;
+   
+
 }
+.share-talk-icon-btn{
+  color:#6b7799;
+  font-size:16px;
+  line-height: 36px;
+  background-color:#f9e787;
+  border:1px solid #f9e787;
+  border-radius:4px;
+  margin-top: 10px;
+  width:100%;
+  padding: 10px;
+
+  &::before{
+    content: "";
+    display: inline-block;
+    width:70%;
+    height:16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    backgorund-position: center;
+    vertical-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px
+  }
+  
+}
+
+.share-link-btn {
+   font-size: 0;
+   line-height: 0;
+   white-space: nowrap;
+   
+   & + .wrap {
+     margin-top: 10px;
+   }
+}
+.share-link-icon-btn{
+  color:#6b7799;
+  font-size:16px;
+  line-height: 36px;
+  background-color:#b3c091;
+  border:1px solid #b3c091;
+  border-radius:4px;
+  
+  &::before{
+    content: "";
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background-image:url("../assets/img/sharelink.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    backgorund-position: center;
+    vertical-align: top;
+    margin-top: 9px;
+  }
+  
+  &.btn-2 {
+    width: 100%;
+  }
+}
+
 
 /*
  Add Gallery
@@ -11334,12 +11435,13 @@ a.no-style {
     height: auto;
     object-fit: contain;
     padding: 5%;
-    @media screen and (min-width:768px) {
-        width: 60%;
-    }
-    @media screen and (min-width:1200px) {
-        width: 50%;
-    }
+    width: 60%;
+/*    @media screen and (min-width:768px) {*/
+/*        width: 60%;*/
+/*    }*/
+/*    @media screen and (min-width:1200px) {*/
+/*        width: 50%;*/
+/*    }*/
   }
 }
 
@@ -11381,3 +11483,30 @@ a.no-style {
     font-size: 3em;
   }
 }
+
+/*
+ Add Gallery 250717
+ */
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+wrap-img {
+    width : 100%;
+    height : 100%;
+}
+
+.wrap div {
+        position: relative;
+    }
+
+    .wrap .first, .second, .third {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(90,0,10,0.4);
+        }
