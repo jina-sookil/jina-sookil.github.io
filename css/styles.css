@@ -11487,8 +11487,8 @@ a.no-style {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
     img {
-        width : 20%;
-        height : 20%;
+        width : 100px;
+        height : 100px;
     }
 }
 
@@ -11497,4 +11497,10 @@ a.no-style {
         position: relative;
     }
 
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
+}
 
