@@ -11497,10 +11497,4 @@ a.no-style {
         position: relative;
     }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    overflow-x: ;
-    overflow-y: ;
-}
 
