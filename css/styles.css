@@ -11506,20 +11506,20 @@ a.no-style {
 #photo{
   display: block;
   width: 960px;
-  border: 10px solid black;
+  border: 0px;
   margin: 0 auto;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
 }
 #gallery{text-align: center;}
  
 #gallery > li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
 }
  
 #gallery > li > img{
   display: block;
   width: 200px;
-  border: 5px solid black;
+  border: 0px;
   cursor: pointer;
 }
