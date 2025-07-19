@@ -18,6 +18,8 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Gallery Slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
         
         
         
@@ -28,6 +30,8 @@
         <!-- 네이버 지도 띄우기 위한 client id -->
         <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=m2daedlv6a"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Gallery Slider -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     </head>
     <body id="page-top">
@@ -43,22 +47,17 @@
                     <div class="col-lg-10">
         
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            img 09 사랑은 소유가 아니라 동행임을 아는 두 사람은</p>
+                            풍요로운 가을의</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            잡은 손을 놓지 않되 함부로 잡아끌지 않을 것이며</p>
+                            따뜻한 햇살 아래에서</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            서로의 두 눈을 고요히 바라보아</p>
+                            아름다운 인연을 맺고자 합니다.</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            말하지 않아도 같은 쪽으로 걸어가리라</p>
+                            새로이 출발하는 행복한 자리에 오셔서</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            -박미라, '아름다운 날에 부치다'</p>
-                        <br>
+                            따뜻한 사랑으로 축하해 주시면</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            두 사람이 같은 곳을 바라보며 평생 함께 걷고자 합니다.</p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                        저희 동행의 첫걸음에 함께하시어</p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                        귀한 발걸음으로 축복해 주시면 감사하겠습니다.</p>
+                            감사하겠습니다.</p>
                         <br>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;"><br>신랑 채수길 · 신부 성진아</p>
                         
@@ -192,39 +191,97 @@
 <!--                        <div><a class="second" href=""></a><img src="../assets/img/gallery/3.jpg" /></div>-->
 <!--                        <div><a class="third" href=""></a><img src="../assets/img/gallery/4.jpg" /></div>-->
 <!--                    </div>-->
-                <div id="container">
-                <img src="../assets/img/gallery/1.jpg" alt="photo" id="photo">
+<!-------------------------------------------------------------------------------------->
+<!--                <div id="container">-->
+<!--                <img src="../assets/img/gallery/1.jpg" alt="photo" id="photo">-->
+<!--                </div>-->
+<!---->
+<!--                <ul id="gallery">-->
+<!--                <li><img src="../assets/img/gallery/1.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/2.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/3.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/4.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/5.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/6.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/7.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/8.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/9.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/10.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/11.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/12.jpg" alt="thumbnail"></li>-->
+<!--                <li><img src="../assets/img/gallery/13.jpg" alt="thumbnail"></li>-->
+<!--                </ul>-->
+<!--                -->
+<!--                <script>-->
+<!--             -->
+<!--              var photo = document.getElementById("photo");-->
+<!--              var thumbnail = document.querySelectorAll("#gallery > li > img");-->
+<!--             -->
+<!--              for ( var i = 0; i < thumbnail.length; i++ )-->
+<!--                thumbnail[i].addEventListener("click", function () {-->
+<!--             -->
+<!--                  photo.setAttribute("src", this.getAttribute("src"));-->
+<!--             -->
+<!--                });-->
+<!--             -->
+<!--            </script>-->
+<!-------------------------------------------------------------------------------------->
+            <div class="gallery-box">
+                <!-- main slider -->
+                <div class="gallery-main-box gallery-main-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/1.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/2.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/3.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/4.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/5.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/6.jpg"></p>
+                        </div>
+                    </div>
+                    <div class="control-wrap">
+                        <div class="swiper-gallery-prev">
+                        </div>
+                        <div class="swiper-gallery-next">
+                        </div>
+                    </div>
                 </div>
-
-                <ul id="gallery">
-                <li><img src="../assets/img/gallery/1.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/2.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/3.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/4.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/5.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/6.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/7.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/8.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/9.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/10.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/11.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/12.jpg" alt="thumbnail"></li>
-                <li><img src="../assets/img/gallery/13.jpg" alt="thumbnail"></li>
-                </ul>
-                
-                <script>
-             
-              var photo = document.getElementById("photo");
-              var thumbnail = document.querySelectorAll("#gallery > li > img");
-             
-              for ( var i = 0; i < thumbnail.length; i++ )
-                thumbnail[i].addEventListener("click", function () {
-             
-                  photo.setAttribute("src", this.getAttribute("src"));
-             
-                });
-             
-            </script>
+                <!-- // main slider -->
+                <!-- thumbnail slider -->
+                <div class="gallery-thumb-box gallery-thumb-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/1.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/2.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/3.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/4.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/5.jpg"></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="info-img object-fit"><img src="../assets/img/gallery/6.jpg"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // thumbnail slider -->
+            </div>
         </section>
 <!--        <section id="gallery bg-primary">-->
 <!--          <div class="container">-->

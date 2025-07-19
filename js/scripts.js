@@ -106,7 +106,7 @@ function kakaoShare() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '수길🤍진아 결혼식에 초대합니다.',
+        title: '수길🤍진아 결혼합니다.',
         description: '2025.10.19 오후 3시\n수원 메리빌리아 더 프레스티지',
         imageUrl: 'https://github.com/jina-sookil/jina-sookil.github.io/blob/main/assets/img/main.jpg?raw=true',
         link: {
@@ -283,4 +283,56 @@ $prevButton.click(function(event) {
 $exitButton.click(function() {
   // Fade out the overlay
   $("#overlay").fadeOut("slow");
+});
+
+
+/*
+ Add Gallery slide
+ */
+$(document).ready(function() {
+    // main slider 실행
+    var thumbSwiper = new Swiper('.gallery-thumb-swiper', {
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,
+        loop: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 5, // 한 화면에 보일 섬네일 개수
+                loopedSlides: 5 // 위 섬네일 개수와 동일한 수치 설정
+            },
+            768: {
+                slidesPerView: 3.5,
+                loopedSlides: 3.5
+            },
+            480: {
+                slidesPerView: 2.5,
+                loopedSlides: 2.5
+            }
+        }
+    });
+    // main slider 실행
+    var mainSwiper = new Swiper('.gallery-main-swiper', {
+        effect: 'fade',
+        spaceBetween: 10,
+        allowTouchMove: false,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-gallery-next',
+            prevEl: '.swiper-gallery-prev'
+        },
+        breakpoints: {
+            1024: {
+                loopedSlides: 5
+            },
+            768: {
+                loopedSlides: 3.5
+            },
+            480: {
+                loopedSlides: 2.5
+            }
+        }
+    });
+    mainSwiper.controller.control = thumbSwiper;
+    thumbSwiper.controller.control = mainSwiper;
 });
