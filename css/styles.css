@@ -11504,8 +11504,22 @@ a.no-style {
 
 #container{margin-bottom: 80px;}
 #photo{
+    @media (max-width: 767px){
+        width: 700px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 768px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 992px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1000px;
+    }
   display: block;
-  width: 960px;
   border: 0px;
   margin: 0 auto;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
@@ -11518,6 +11532,7 @@ a.no-style {
 }
  
 #gallery > li > img{
+    
   display: block;
   width: 200px;
   border: 0px;
