@@ -43,7 +43,7 @@
                     <div class="col-lg-10">
         
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
-                            img 06 사랑은 소유가 아니라 동행임을 아는 두 사람은</p>
+                            img 07 사랑은 소유가 아니라 동행임을 아는 두 사람은</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
                             잡은 손을 놓지 않되 함부로 잡아끌지 않을 것이며</p>
                         <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
@@ -71,7 +71,7 @@
         <section class="content-section bg-light text-center" id="services">
             <!-- <div class="container px-4 px-lg-5"> -->
                 <div class="content-section-heading">
-                    <img class="img-fluid" src="assets/img/IMG_6574.jpg" alt="소개 이미지" />
+                    <img class="img-fluid" src="assets/img/sub.jpg" alt="소개 이미지" />
                 </div>
                 <section class="content-section bg-primary text-center" id="services">
                     <div class="container px-4 px-lg-5">
@@ -187,11 +187,35 @@
                     <p style="font-family: 'Gowun Dodum', serif; font-size: 20px; font-weight: bold;">GALLERY</p>
                     <br>
                 </div>
-                <div class="wrap">
-                        <div><a class="first" href=""></a><img src="../assets/img/gallery/2.jpg" /></div>
-                        <div><a class="second" href=""></a><img src="../assets/img/gallery/3.jpg" /></div>
-                        <div><a class="third" href=""></a><img src="../assets/img/gallery/4.jpg" /></div>
-                    </div>
+<!--                <div class="wrap">-->
+<!--                        <div><a class="first" href=""></a><img src="../assets/img/gallery/2.jpg" /></div>-->
+<!--                        <div><a class="second" href=""></a><img src="../assets/img/gallery/3.jpg" /></div>-->
+<!--                        <div><a class="third" href=""></a><img src="../assets/img/gallery/4.jpg" /></div>-->
+<!--                    </div>-->
+                <div id="container">
+                <img src="../assets/img/gallery/1.jpg" alt="photo" id="photo">
+                </div>
+
+                <ul id="gallery">
+                <li><img src="../assets/img/gallery/1.jpg" alt="thumbnail"></li>
+                <li><img src="../assets/img/gallery/2.jpg" alt="thumbnail"></li>
+                <li><img src="../assets/img/gallery/3.jpg" alt="thumbnail"></li>
+                <li><img src="../assets/img/gallery/4.jpg" alt="thumbnail"></li>
+                </ul>
+                
+                <script>
+             
+              var photo = document.getElementById("photo");
+              var thumbnail = document.querySelectorAll("#gallery > li > img");
+             
+              for ( var i = 0; i < thumbnail.length; i++ )
+                thumbnail[i].addEventListener("click", function () {
+             
+                  photo.setAttribute("src", this.getAttribute("src"));
+             
+                });
+             
+            </script>
         </section>
 <!--        <section id="gallery bg-primary">-->
 <!--          <div class="container">-->
