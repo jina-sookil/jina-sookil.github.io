@@ -49,7 +49,7 @@ function groomsFatherAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n000000001 국민은행")
+	alert("계좌번호가 복사되었습니다.\n000000001 농협")
 }
 //신랑 어머님 계좌번호 복사
 function groomsMotherAccountNumber(){
