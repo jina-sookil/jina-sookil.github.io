@@ -11378,6 +11378,7 @@ a.no-style {
   }
 }
 
+
 /*
  Add Gallery 250719
  */
@@ -11387,7 +11388,7 @@ a.no-style {
   display: block;
   border: 0px;
   margin: 0 auto;
-  width: 500px;
+  width: 400px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
 }
 #gallery{text-align: center;}
@@ -11400,7 +11401,7 @@ a.no-style {
 #gallery > li > img{
     
   display: block;
-  width: 200px;
+  width: 400px;
   border: 0px;
   cursor: pointer;
 }
