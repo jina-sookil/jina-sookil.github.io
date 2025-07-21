@@ -11401,7 +11401,7 @@ a.no-style {
 #gallery > li > img{
     
   display: block;
-  width: 400px;
+  width: 250px;
   border: 0px;
   cursor: pointer;
 }
