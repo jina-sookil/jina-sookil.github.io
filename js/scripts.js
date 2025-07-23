@@ -30,7 +30,7 @@ function copyLocation(){
 
 // 신랑 계좌번호 복사
 function groomAccountNumber(){
-	var groom_account = '1002149625800';
+	var groom_account = '1002-149-625800';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = groom_account;
@@ -42,7 +42,7 @@ function groomAccountNumber(){
 
 //신랑 아버님 계좌번호 복사
 function groomsFatherAccountNumber(){
-    var grooms_father_account = '27608002066';
+    var grooms_father_account = '276-08-002066';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = grooms_father_account;
@@ -53,7 +53,7 @@ function groomsFatherAccountNumber(){
 }
 //신랑 어머님 계좌번호 복사
 function groomsMotherAccountNumber(){
-    var grooms_mother_account = '17049356130873';
+    var grooms_mother_account = '170493-56-130873';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = grooms_mother_account;
@@ -64,7 +64,7 @@ function groomsMotherAccountNumber(){
 }
 // 신부 계좌번호 복사
 function brideAccountNumber(){
-    var bride_account = '3333017158366';
+    var bride_account = '3333-01-7158366';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = bride_account;
@@ -75,7 +75,7 @@ function brideAccountNumber(){
 }
 // 신부 아버님 계좌번호 복사
 function bridesFartherAccountNumber(){
-    var brides_farther_account = '20708251010869';
+    var brides_farther_account = '207082-51-010869';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = brides_farther_account;
