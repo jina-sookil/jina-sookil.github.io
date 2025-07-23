@@ -11395,7 +11395,8 @@ a.no-style {
  
 #gallery > li {
   display: inline-block;
-  margin: 0 5px;
+/*  margin: 0 5px;*/
+  margin: 0 0px;
 }
  
 #gallery > li > img{

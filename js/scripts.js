@@ -30,70 +30,70 @@ function copyLocation(){
 
 // 신랑 계좌번호 복사
 function groomAccountNumber(){
-	var groom_account = '00000000 카카오뱅크';
+	var groom_account = '1002149625800';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = groom_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("신랑 채수길의 계좌번호가 복사되었습니다.")
 }
 
 //신랑 아버님 계좌번호 복사
 function groomsFatherAccountNumber(){
-    var grooms_father_account = '00000000 국민은행';
+    var grooms_father_account = '27608002066';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = grooms_father_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n000000001 농협")
+	alert("신랑 혼주 채태석님의 계좌번호가 복사되었습니다.")
 }
 //신랑 어머님 계좌번호 복사
 function groomsMotherAccountNumber(){
-    var grooms_mother_account = '00000000 국민은행';
+    var grooms_mother_account = '17049356130873';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = grooms_mother_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n000000002 국민은행")
+    alert("신랑 혼주 김은자님의 계좌번호가 복사되었습니다.")
 }
 // 신부 계좌번호 복사
 function brideAccountNumber(){
-    var bride_account = '3333-01-7158366 카카오뱅크';
+    var bride_account = '3333017158366';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = bride_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("신부의 계좌번호가 복사되었습니다.\n3333-01-7158366 카카오뱅크")
+    alert("신부 성진아의 계좌번호가 복사되었습니다.")
 }
 // 신부 아버님 계좌번호 복사
 function bridesFartherAccountNumber(){
-    var brides_farther_account = '3333-01-7158366 카카오뱅크';
+    var brides_farther_account = '20708251010869';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = brides_farther_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n3333-01-71583663 카카오뱅크")
+    alert("신부 혼주 성영만님의 계좌번호가 복사되었습니다.")
 }
 // 신부 어머님 계좌번호 복사
 function bridesMotherAccountNumber(){
-    var brides_mother_account = '3333-01-7158366 카카오뱅크';
+    var brides_mother_account = '00000000000000';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = brides_mother_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n3333-01-71583664 카카오뱅크")
+    alert("신부 혼주 추원숙님의 계좌번호가 복사되었습니다.")
 }
 
 
