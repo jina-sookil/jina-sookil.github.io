@@ -333,34 +333,76 @@
                     <p style="font-family: 'Gowun Dodum', serif; font-size: 20px; font-weight: bold;">신랑 & 신부에게 마음 전하기</p>
                     </div>
 <!--                    <div class="call-button text-left">-->
-                    <div class="text-information text-left">
+                    <div class="text-information">
                         <div class="hr-sect">
                             <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
                             신랑측 계좌번호</p></div>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">채수길&nbsp;&nbsp;&nbsp;
-                            우리은행&nbsp;&nbsp;1002-149-625800&nbsp;
-                        <a title="계좌 복사하기" onclick="groomAccountNumber(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a>
-                        </p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">채태석&nbsp;&nbsp;&nbsp;
-                            우리은행&nbsp;&nbsp;276-08-002066&nbsp;
-                        <a title="계좌 복사하기" onclick="groomsFatherAccountNumber(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a>
-                        </p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">김은자&nbsp;&nbsp;&nbsp;
-                            농협&nbsp;&nbsp;170493-56-130873&nbsp;
-                        <a title="계좌 복사하기" onclick="groomsMotherAccountNumber(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a>
-                        </p>
+                        <div class="account-info-box">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:left;">채수길&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:right;">우리은행&nbsp;&nbsp;1002-149-625800</p></li>
+                            <button onclick="groomAccountNumber()" type="button" class="copy-account-btn">
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 14px;">
+                                <i class="fa-solid fa-copy"></i>
+                                &nbsp;계좌번호 복사하기</p>
+                            </button>
+                        </div>
+                        <div class="account-info-box">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:left;">채태석&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:right;">우리은행&nbsp;&nbsp;276-08-002066</p></li>
+                            <button onclick="groomsFatherAccountNumber()" type="button" class="copy-account-btn">
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 14px;">
+                                <i class="fa-solid fa-copy"></i>
+                                &nbsp;계좌번호 복사하기</p>
+                            </button>
+                        </div>
+                        <div class="account-info-box">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:left;">김은자&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+                                <li class="list-inline-item">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:right;">농협&nbsp;&nbsp;170493-56-130873</p></li>
+                            <button onclick="groomsMotherAccountNumber()" type="button" class="copy-account-btn">
+                                <p style="font-family: 'Gowun Dodum', serif; font-size: 14px;">
+                                <i class="fa-solid fa-copy"></i>
+                                &nbsp;계좌번호 복사하기</p>
+                            </button>
+                        </div>
                     </div>
                     <br>
-                        <div class="hr-sect"><p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
+                        <div class="hr-sect">
+                            <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">
                             신부측 계좌번호</p></div>
-                        <div class="text-information text-left">
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">성진아&nbsp;&nbsp;&nbsp;
-                            카카오뱅크&nbsp;&nbsp;3333-01-7158366&nbsp;
-                        <a title="계좌 복사하기" onclick="brideAccountNumber(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a></p>
-                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">성영만&nbsp;&nbsp;&nbsp;
-                        농협&nbsp;&nbsp;207082-51-010869&nbsp;
-                        <a title="계좌 복사하기" onclick="bridesFartherAccountNumber(); return false;" href="#!"><i class="fa-regular fa-copy"></i></a>
-                        </p>
+                        <div class="text-information">
+                            <div class="account-info-box">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:left;">성진아&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+                                    <li class="list-inline-item">
+                                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:right;">카카오뱅크&nbsp;&nbsp;3333-01-7158366</p></li>
+                                <button onclick="brideAccountNumber()" type="button" class="copy-account-btn">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 14px;">
+                                    <i class="fa-solid fa-copy"></i>
+                                    &nbsp;계좌번호 복사하기</p>
+                                </button>
+                            </div>
+                            <div class="account-info-box">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:left;">성영만&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+                                    <li class="list-inline-item">
+                                        <p style="font-family: 'Gowun Dodum', serif; font-size: 15px; text-align:right;">농협&nbsp;&nbsp;207082-51-010869</p></li>
+                                <button onclick="bridesFartherAccountNumber()" type="button" class="copy-account-btn">
+                                    <p style="font-family: 'Gowun Dodum', serif; font-size: 14px;">
+                                    <i class="fa-solid fa-copy"></i>
+                                    &nbsp;계좌번호 복사하기</p>
+                                </button>
+                            </div>
                     </div>
                 </div>
         </section>
@@ -381,18 +423,6 @@
                     <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
                     <i class="fa-solid fa-link"></i>
                     &nbsp;청첩장 주소 복사하기</p></button>
-<!--                <ul class="list-inline">-->
-<!--                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">-->
-<!--                    <a title="kakaotalk" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i>&nbsp;카카오톡으로 청첩장 전하기</a></p>-->
-<!--                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">-->
-<!--                    <a title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i>&nbsp;링크 복사하기</a></p>-->
-<!--                    <li class="list-inline-item">-->
-<!--                        <a class="social-kakao-link rounded-circle text-white mr-5" title="카카오톡으로 공유하기" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i></a>-->
-<!--                    </li>-->
-<!--                    <li class="list-inline-item">-->
-<!--                        <a class="social-link rounded-circle text-white mr-5" title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i></a>-->
-<!--                    </li>-->
-<!--                </ul>-->
                 <br><br>
                 <p class="text-muted small mb-0" style="font-family: 'Gowun Dodum', sans-serif;">Made By Jina Sung.</p>
             </div>
