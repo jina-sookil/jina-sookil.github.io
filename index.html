@@ -372,20 +372,28 @@
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
-                <ul class="list-inline">
+                <button onclick="javascript:kakaoShare()" type="button" class="share-talk-icon-btn">
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
+                    <i class="fa-solid fa-comment"></i>
+                    &nbsp;카카오톡으로 청첩장 전하기</p></button>
+                
+                <button onclick="copyLink()" type="button" class="share-link-icon-btn">
+                    <p style="font-family: 'Gowun Dodum', serif; font-size: 15px;">
+                    <i class="fa-solid fa-link"></i>
+                    &nbsp;청첩장 주소 복사하기</p></button>
+<!--                <ul class="list-inline">-->
 <!--                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">-->
 <!--                    <a title="kakaotalk" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i>&nbsp;카카오톡으로 청첩장 전하기</a></p>-->
 <!--                    <p style="font-family: 'Gowun Dodum', serif; font-size: 16px;">-->
 <!--                    <a title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i>&nbsp;링크 복사하기</a></p>-->
-                
-                    
-                    <li class="list-inline-item">
-                        <a class="social-kakao-link rounded-circle text-white mr-5" title="카카오톡으로 공유하기" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-5" title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i></a>
-                    </li>
-                </ul>
+<!--                    <li class="list-inline-item">-->
+<!--                        <a class="social-kakao-link rounded-circle text-white mr-5" title="카카오톡으로 공유하기" href="javascript:kakaoShare()"><i class="fa-solid fa-comment"></i></a>-->
+<!--                    </li>-->
+<!--                    <li class="list-inline-item">-->
+<!--                        <a class="social-link rounded-circle text-white mr-5" title="링크 복사하기" onclick="copyLink(); return false;" href="#!"><i class="fa-solid fa-link"></i></a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+                <br><br>
                 <p class="text-muted small mb-0" style="font-family: 'Gowun Dodum', sans-serif;">Made By Jina Sung.</p>
             </div>
         </footer>
