@@ -603,6 +603,11 @@ progress {
   max-width: 100%;
   height: auto;
   margin-top:10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .img-thumbnail {
@@ -11347,7 +11352,8 @@ a.no-style {
     border:none;
     border-radius:10px;
     text-align:center;
-    width:90%;
+    max-width: 90%;
+    height: auto;
     padding-top:15px;
     padding-bottom:5px;
     margin-bottom:10px;
